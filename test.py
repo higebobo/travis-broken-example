@@ -1,7 +1,8 @@
-import time
+import unittest
 
-def test_1():
-    assert True
+class TestTravis(unittest.TestCase):
+    def test_1(self):
+        self.assertEqual(1, 1)
 
-def test_2():
-    assert False
+    def test_2(self):
+        self.assertEqual(1, "1")
